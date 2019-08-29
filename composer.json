@@ -1,0 +1,23 @@
+{
+    "name": "bigbit/smart-di-slim",
+    "description": "Slim framework SmartContainer support",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrzej Heczko",
+            "email": "andrzej.heczko@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BigBIT\\SmartDI\\Support\\Slim\\": "support/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "slim/slim": "^3.0.0",
+        "bigbit/smart-di": "^1.0.0",
+        "bigbit/di-bootstrap": "^1.0.0"
+    }
+}
