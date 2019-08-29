@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "BigBIT\\SmartDI\\Support\\Slim\\": "support/"
+            "BigBIT\\SmartDI\\Support\\slim\\": "support/"
         }
     },
     "minimum-stability": "stable",

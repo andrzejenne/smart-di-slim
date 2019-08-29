@@ -1,0 +1,3 @@
+parameters:
+	ignoreErrors:
+	    - '#Parameter\s+\#1 \$container of method \s*Slim\\DefaultServicesProvider::register\(\) expects Slim\\Container,\s*Psr\\Container\\ContainerInterface given.#'#'
