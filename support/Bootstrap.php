@@ -25,13 +25,13 @@ class Bootstrap extends \BigBIT\DIBootstrap\Bootstrap {
      * @param array $bindings
      */
     final protected static function bootContainer(ContainerInterface $container, array $bindings) {
-        parent::bootContainer($container, $bindings);
-
         $userSettings = &$bindings['settings'];
 
         $bindings['settings'] = function() use ($userSettings) {
             return new Collection(array_merge(static::$defaultSettings, $userSettings));
         };
+
+        parent::bootContainer($container, $bindings);
 
         $serviceProvider = new DefaultServicesProvider();
 
